@@ -7,7 +7,12 @@ public class Activity {
     private int estimatedDuration;
     private ArrayList<Log> logs;
 
-    public char isActive() {
-
+    public boolean isActive() {
+        if (this.state.equals("Active")){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

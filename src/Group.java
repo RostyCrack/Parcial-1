@@ -12,8 +12,10 @@ public class Group {
 
     public static int countActiveProjects() {
         int p = proyects.size();
+
         for (int i = 0; i<p; i++){
-            proyects.get(i).isActive()
+            proyects.get(i).isActive();
+
         }
         return 0;
     }

@@ -15,8 +15,9 @@ public class Project {
 
     public void isActive() {
         int i = iterations.size();
+        int
         for (int g; g<i; g++){
-            iterations.get(g).countOpenActivities()
+            iterations.get(g).countOpenActivities();
         }
     }
 }

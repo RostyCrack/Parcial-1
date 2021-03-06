@@ -8,10 +8,15 @@ public class Iteration {
     private LocalDate dateEnd;
     private ArrayList<Activity> activites;
 
-    public void countOpenActivities() {
+    public int countOpenActivities() {
         int a = activites.size();
+        boolean active = false;
+        int activeAct = 0;
         for(int i = 0; i<a; i++){
-            activites.get(i).isActive()
+            if(activites.get(i).isActive()==true){
+                activeAct += 1;
+            }
         }
+        return activeAct;
     }
 }
