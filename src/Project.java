@@ -8,4 +8,8 @@ public class Project {
     private LocalDate dateInit;
     private LocalDate dateEnd;
     private ArrayList<Iteration> iterations;
+    private Group group;
+    private ArrayList<Course> requirements;
+    private Student leader;
+    private ArrayList<Student> members;
 }
