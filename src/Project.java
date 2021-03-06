@@ -12,4 +12,11 @@ public class Project {
     private ArrayList<Course> requirements;
     private Student leader;
     private ArrayList<Student> members;
+
+    public void isActive() {
+        int i = iterations.size();
+        for (int g; g<i; g++){
+            iterations.get(g).countOpenActivities()
+        }
+    }
 }

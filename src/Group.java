@@ -8,6 +8,13 @@ public class Group {
     private String area;
     private Student leader;
     private ArrayList<Student> members;
-    private ArrayList<Project> proyects;
+    private static ArrayList<Project> proyects;
 
+    public static int countActiveProjects() {
+        int p = proyects.size();
+        for (int i = 0; i<p; i++){
+            proyects.get(i).isActive()
+        }
+        return 0;
+    }
 }

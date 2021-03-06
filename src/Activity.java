@@ -6,4 +6,8 @@ public class Activity {
     private String state;
     private int estimatedDuration;
     private ArrayList<Log> logs;
+
+    public char isActive() {
+
+    }
 }
