@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Project {
 
@@ -7,7 +8,7 @@ public class Project {
     private String goal;
     private LocalDate dateInit;
     private LocalDate dateEnd;
-    private ArrayList<Iteration> iterations;
+    private HashMap<Iteration, Activity> iterations;
     private Group group;
     private ArrayList<Course> requirements;
     private Student leader;
@@ -15,8 +16,7 @@ public class Project {
 
     public void isActive() {
         int i = iterations.size();
-        int
-        for (int g; g<i; g++){
+        for (int g = 0; g<i; g++){
             iterations.get(g).countOpenActivities();
         }
     }
