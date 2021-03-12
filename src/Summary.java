@@ -7,4 +7,9 @@ public class Summary {
     private int openActivities;
     private int closeActivities;
 
+
+    public Summary(LocalDate currentDate, int ap) {
+        currentDate = this.date;
+        ap = this.activeProjects;
+    }
 }

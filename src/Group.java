@@ -8,15 +8,22 @@ public class Group {
     private String area;
     private Student leader;
     private ArrayList<Student> members;
-    private static ArrayList<Project> proyects;
+    private ArrayList<Project> projects;
 
-    public static int countActiveProjects() {
-        int p = proyects.size();
-
+    public int countActiveProjects() {
+        /* int p = proyects.size();
+        int ap = 0;
         for (int i = 0; i<p; i++){
-            proyects.get(i).isActive();
-
+            if(proyects.get(i).isActive()){
+                ap+=1;
+            }
         }
-        return 0;
+        return ap;
+         */
+
+        return (int) this.projects.stream().map(p->p.isActive())
+                .filter(b -> b).count();
     }
+
+
 }

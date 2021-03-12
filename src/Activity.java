@@ -7,12 +7,18 @@ public class Activity {
     private int estimatedDuration;
     private ArrayList<Log> logs;
 
+    /**
+     * Evaluates if an activity is active
+     *
+     * @returns true or false
+     */
+
     public boolean isActive() {
-        if (this.state.equals("Active")){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return this.state.equalsIgnoreCase("Active") ||
+                this.state.equalsIgnoreCase("Pending");
     }
+
+
+
+
 }
