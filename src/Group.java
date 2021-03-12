@@ -10,6 +10,10 @@ public class Group {
     private ArrayList<Student> members;
     private ArrayList<Project> projects;
 
+    /**
+     *
+     * @returns number of active projects
+     */
     public int countActiveProjects() {
         /* int p = proyects.size();
         int ap = 0;

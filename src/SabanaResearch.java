@@ -12,6 +12,9 @@ public class SabanaResearch {
         return ":v";
     }
 
+    /**
+     * Creates a summary entry
+     */
     public void createSummaryEntry(){
         /*int g = groups.size();
         for (int i = 0; i<g;i++){

@@ -14,6 +14,10 @@ public class Project {
     private Student leader;
     private ArrayList<Student> members;
 
+    /**
+     * Counts open activities of every iteration
+     * @return # of open activites
+     */
     public int countOpenActivities() {
         /*int activeActivities = 0;
         for (Iteration i : iterations) {
@@ -26,6 +30,10 @@ public class Project {
 
     }
 
+    /**
+     * Evaluates if a project is active
+     * @returs true or false
+     */
     public boolean isActive(){
         boolean isActive;
 
